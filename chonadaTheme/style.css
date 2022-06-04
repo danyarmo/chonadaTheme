@@ -1,0 +1,288 @@
+/*
+Theme Name: ChonadaTheme
+Author: Daniel Yarmolenko
+Author URI: http://www.danyarmo.com
+Version: 1.0
+*/
+p   {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    margin-top: 10px;
+    padding: 0px;
+    background-color: #FF9C53;
+}
+
+body {
+    padding-top: 179px;
+    background-color: #1A1919;
+    /*#D4E8C1*/
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+.bannerBig {
+    /*Control second banner height*/
+    height: 95px;
+    background-color: #121212;
+    color: white;
+}
+
+#bigHeader {
+    /*big header*/
+    text-align: center;
+    font-size: 380%;
+    font-weight: bold;
+}
+
+#bigHeader a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.collapseBanner a {
+    text-decoration: none;
+    color: white;
+}
+
+#tagLine {
+    /*tagline under big header*/
+    margin-top: -18px;
+    text-align: center;
+    font-size: 100%;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+.navbar {
+    background-color: #121212;
+}
+
+nav ul li a {
+    color: white !important;
+}
+
+.nav-link {
+    border-top: 2px solid #121212;
+    margin-top: 7px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav-link:hover {
+    border-color: #FF9C53;
+}
+
+nav ul li.current-menu-item a:link,
+nav ul li.current-menu-item a:visited {
+    border-color: #FF9C53;
+    /*#87C232*/
+}
+
+.collapseBanner {
+    /*banner that shoes when scrolling*/
+    background-color: #121212;
+    height: 32px;
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+    color: white;
+
+}
+
+.collapseHeader {
+    /*this is the collapse banner text at small widths*/
+    font-weight: bold;
+    font-size: 160%;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+}
+
+.container-fluid {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+.container .card-columns {
+    margin-top: -30px;
+}
+
+.roboFont {
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+    margin-bottom: -10px;
+    margin-top: -10px;
+    height: 35px;
+    border-style: hidden;
+    background-color: #FF9C53;
+}
+
+.btn:focus {
+    outline: none !important;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.price {
+    float: right;
+    opacity: .6;
+}
+
+@media (max-width: 992px) {
+
+    /*show 2 cards in each row at 992px*/
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /*show 1 card in each row at 768px*/
+    .card-columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
+
+.card {
+    border-style: solid;
+    border-width: 1px;
+    background-color: #272727;
+    color: white;
+}
+
+.card-title {
+    text-align: center;
+    font-weight: 400;
+    margin-top: -7px;
+
+}
+
+.card-text {
+    margin-top: -7px;
+    font-weight: 100;
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #E7E7E7;
+}
+
+.card-img-top {
+    -webkit-filter: grayscale(45%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(45%);
+}
+
+.helText {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 100;
+}
+
+.descriptionContainer {
+    margin-top: 40px;
+    margin-bottom: 235px;
+    background-color: #272727;
+    padding: 0px 0px;
+    border-radius: 3px;
+    border-color: #474A4F;
+    border-width: 1px;
+    border-style: solid;
+}
+
+@media (max-width: 768px) {
+
+    /*at smaller screen first card margin changes to be closer to top*/
+    .mainContainer {
+        margin-top: -80px;
+    }
+
+    .descriptionContainer {
+        margin-top: -80px;
+
+    }
+
+    .descriptionCardTitle {
+
+        margin-top: 20px;
+
+    }
+
+    .descriptionTextMargin {
+        margin-left: 15px;
+    }
+
+    .descriptionImg {
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 768px) {
+    .mainContainer {
+        margin-top: 30px;
+    }
+}
+
+.descriptionButton {
+    float: right;
+    margin-bottom: 5px;
+}
+
+.descriptionPrice {
+    float: left;
+    font-size: 120%;
+    opacity: .6;
+    margin-top: -8px;
+}
+
+.descriptionCardTitle {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.descriptionTextMargin {
+    margin-top: 10px;
+    margin-right: 15px;
+    color: #E7E7E7;
+}
+
+#disclaimer {
+    padding-top:30px; 
+    padding-left: 30px;
+}
+
+#disclaimer ul li {
+    list-style: none;
+}
+
+#disclaimerTitle {
+
+    font-weight: bold;
+    font-size: 2em;
+    padding-top: 30px;
+}
+
+#disclaimerBackground {
+    height: 250px;
+    background-color:#121212;
+    margin-top: 500px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
